@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 module.exports = () => {
     mongoose.connect(
-        'mongodb://dbUser:dbPassword1@ds249623.mlab.com:49623/getir-case-study',
+        'mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true',
         {useNewUrlParser: true, useUnifiedTopology: true});
 
     mongoose.connection.on('open', () => {
